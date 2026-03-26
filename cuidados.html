@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Cuidado de Joyas | Little Women</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+.tab{
+  padding:10px 18px;
+  border-radius:999px;
+  border:1px solid #ddd;
+}
+.tab.active{
+  background:#c8a97e;
+  color:white;
+}
+.material{display:none;}
+.material.active{display:block;}
+</style>
+
+</head>
+
+<body class="bg-[#f7f3ef] text-[#3b2a23]">
+
+<!-- HEADER -->
+<header class="flex justify-between items-center px-12 py-6 bg-white border-b">
+
+  <!-- LOGO -->
+  <a href="index.html" class="text-3xl font-serif tracking-wide text-[#3b2a23]">
+    LITTLE WOMEN
+  </a>
+
+  <!-- MENU -->
+  <nav class="flex gap-8 text-sm text-[#3b2a23]">
+
+    <a href="index.html" class="hover:text-[#c8a97e] transition">
+      Inicio
+    </a>
+
+    <a href="index.html.#catalogo" class="hover:text-[#c8a97e] transition">
+      Catálogo
+    </a>
+
+  </nav>
+
+</header>
+
+<!-- HERO -->
+<section class="relative h-[420px] flex items-center justify-center text-center text-white">
+
+  <!-- FONDO -->
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638"
+         class="w-full h-full object-cover">
+  </div>
+
+  <!-- OVERLAY -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-[#2b1a12]/90"></div>
+
+  <!-- CONTENIDO -->
+  <div class="relative z-10 max-w-2xl px-6">
+
+    <!-- ICONO -->
+    <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-[#c8a97e]/20 flex items-center justify-center text-[#c8a97e] text-xl">
+      ✨
+    </div>
+
+    <!-- TITULO -->
+    <h1 class="text-4xl md:text-5xl font-serif mb-4">
+      Cuidado de Joyas
+    </h1>
+
+    <!-- DESCRIPCIÓN -->
+    <p class="text-gray-300 text-sm md:text-base mb-6 leading-relaxed">
+      Guía completa para mantener el brillo y la vida de tus joyas Little Women.
+      Cada material tiene sus propios secretos.
+    </p>
+
+    <!-- FEATURES -->
+    <div class="flex justify-center gap-6 text-xs md:text-sm text-[#c8a97e]">
+      <span>✦ Brillo duradero</span>
+      <span>✦ Más vida útil</span>
+      <span>✦ Autenticidad preservada</span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONSEJO -->
+<section class="bg-[#efe7df] text-center py-4 px-6 text-sm text-[#6b5b4f]">
+  💡 Consejo clave: Independientemente del material, la regla universal es:
+  ponla de último al arreglarte y quítatela de primero antes de entrar al agua,
+  ejercitarte o dormir.
+</section>
+
+<!-- TABS -->
+<div class="flex justify-center gap-3 flex-wrap mb-10">
+<button class="tab active" onclick="show('oro',this)">Oro 18k</button>
+<button class="tab" onclick="show('plata950',this)">Plata 950</button>
+<button class="tab" onclick="show('plata925',this)">Plata 925</button>
+<button class="tab" onclick="show('enchapado',this)">Enchapada en Oro</button>
+<button class="tab" onclick="show('titanio',this)">Titanio</button>
+</div>
+
+<div class="max-w-6xl mx-auto px-6 pb-20">
+
+<!-- ================= ORO ================= -->
+<div id="oro" class="material active">
+<div class="bg-[#efe7df] rounded-2xl overflow-hidden border">
+
+<div class="p-6 flex items-center gap-4">
+<div class="w-10 h-10 bg-[#c8a97e]/20 rounded-full flex items-center justify-center">💎</div>
+<h2 class="font-serif text-xl">Oro 18k</h2>
+<span class="text-xs bg-[#c8a97e] text-white px-3 py-1 rounded-full">750‰ pureza</span>
+</div>
+
+<p class="px-6 pb-6 text-sm">
+El oro 18k es una aleación de 75% oro puro combinado con otros metales para mayor resistencia. 
+Aunque es uno de los materiales más duraderos, algunos hábitos pueden opacar su brillo con el tiempo.
+</p>
+
+<!-- CONTENIDO -->
+<div class="bg-white p-6 grid md:grid-cols-2 gap-8 items-start">
+
+<!-- IMAGEN -->
+<img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638"
+class="rounded-xl w-full h-[320px] object-cover">
+
+<!-- QUÉ HACER -->
+<div>
+
+<h3 class="font-semibold mb-5 text-green-700 flex items-center gap-2">
+✔ QUÉ HACER
+</h3>
+
+
+<div class="space-y-5 text-sm">
+
+<div class="flex gap-3">
+<div>
+<strong>Limpiar con paño suave</strong>
+<p class="text-[#6b5b4f]">
+Usa un paño de microfibra seco para frotar suavemente y eliminar el polvo y grasa acumulada del día. 
+Hazlo antes de guardarla.
+</p>
+</div>
+</div>
+
+<div class="flex gap-3">
+<div>
+<strong>Enjuague ocasional con agua tibia</strong>
+<p class="text-[#6b5b4f]">
+Una vez al mes puedes sumergir la joya unos minutos en agua tibia con unas gotas de jabón neutro. 
+Enjuaga bien y seca completamente antes de guardar.
+</p>
+</div>
+</div>
+
+<div class="flex gap-3">
+<div>
+<strong>Guardar por separado</strong>
+<p class="text-[#6b5b4f]">
+Almacena cada pieza en su bolsita o cajita individual. 
+El oro puede rayarse si roza con otras joyas u objetos metálicos.
+</p>
+</div>
+</div>
+
+<div class="flex gap-3">
+<div>
+<strong>Revisión periódica</strong>
+<p class="text-[#6b5b4f]">
+Revisa los cierres, broches y enganches cada 3 meses. 
+Ante cualquier desgaste o cierre flojo, lleva la pieza a revisión.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- DIVISOR -->
+<div class="border-t mx-6"></div>
+
+<!-- QUÉ EVITAR -->
+<div class="p-6 bg-[#f9f7f5]">
+
+  <!-- TÍTULO (FUERA DEL GRID) -->
+  <h3 class="font-semibold mb-5 text-red-500 flex items-center gap-2">
+    ✖ QUÉ EVITAR
+  </h3>
+
+  <!-- GRID -->
+  <div class="grid md:grid-cols-2 gap-4 text-sm">
+
+    <div class="bg-[#fff5f5] p-4 rounded-xl border">
+      <strong>Evitar productos químicos</strong>
+      <p class="text-[#6b5b4f]">
+        El cloro, los blanqueadores y productos de limpieza pueden atacar la aleación y provocar decoloración o manchas.
+      </p>
+    </div>
+
+    <div class="bg-[#fff5f5] p-4 rounded-xl border">
+      <strong>Retirar al bañarte y nadar</strong>
+      <p class="text-[#6b5b4f]">
+        El agua clorada de piscinas y el agua salada del mar pueden dañar el acabado. 
+        Retira tus joyas antes de ingresar al agua.
+      </p>
+    </div>
+
+    <div class="bg-[#fff5f5] p-4 rounded-xl border">
+      <strong>No usar abrasivos</strong>
+      <p class="text-[#6b5b4f]">
+        Evita esponjas, cepillos duros o pastas abrasivas. 
+        Pueden rayar la superficie del oro y opacar su brillo natural.
+      </p>
+    </div>
+
+    <div class="bg-[#fff5f5] p-4 rounded-xl border">
+      <strong>Evitar exposición prolongada al sol</strong>
+      <p class="text-[#6b5b4f]">
+        Aunque el oro no se oxida, el calor excesivo puede afectar gemas, esmaltes o incrustaciones.
+      </p>
+    </div>
+
+  </div>
+</div> <!-- cierre QUÉ EVITAR -->
+</div> <!-- cierre caja oro -->
+</div> <!-- cierre material oro -->
+
+<!-- ================= PLATA 950 ================= -->
+<div id="plata950" class="material">
+
+<div class="bg-[#efe7df] rounded-2xl overflow-hidden border">
+
+<!-- HEADER -->
+<div class="p-6 flex items-center gap-4">
+  <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center">
+    💧
+  </div>
+
+  <div>
+    <h2 class="font-serif text-xl">Plata 950</h2>
+    <span class="text-xs bg-gray-400 text-white px-3 py-1 rounded-full">950‰ pureza</span>
+  </div>
+</div>
+
+<p class="px-6 pb-6 text-sm text-[#4b3f36]">
+La plata 950 contiene 95% de plata pura, lo que la hace más suave y con mayor brillo que la plata estándar. 
+Al tener menor cantidad de aleación, es más susceptible a oxidarse, por lo que requiere un cuidado más frecuente.
+</p>
+
+<!-- CONTENIDO -->
+<div class="bg-white p-6 grid md:grid-cols-2 gap-8 items-start">
+
+<!-- IMAGEN -->
+<img src="https://images.unsplash.com/photo-1602752250015-52934bc45613"
+class="rounded-xl w-full h-[320px] object-cover">
+
+<!-- QUE HACER -->
+<div>
+
+<h3 class="font-semibold mb-4 text-green-700 flex items-center gap-2">
+  ✔ QUÉ HACER
+</h3>
+
+<div class="space-y-5 text-sm">
+
+<div>
+<strong>Limpiar con paño específico para plata</strong>
+<p class="text-[#6b5b4f]">
+Los paños de limpieza contienen agentes antiempañado que restauran el brillo y retrasan la oxidación. 
+Úsalos al menos una vez a la semana.
+</p>
+</div>
+
+<div>
+<strong>Guardar en bolsas antiempañado</strong>
+<p class="text-[#6b5b4f]">
+Almacena las piezas en bolsas de cierre hermético o bolsitas de franela. 
+El contacto con el aire acelera la oxidación.
+</p>
+</div>
+
+<div>
+<strong>Guardar en lugar fresco y oscuro</strong>
+<p class="text-[#6b5b4f]">
+La humedad y la luz directa aceleran el proceso de oxidación. 
+Un cajón cerrado o joyero forrado son ideales.
+</p>
+</div>
+
+<div>
+<strong>Uso frecuente = menos empañado</strong>
+<p class="text-[#6b5b4f]">
+El roce natural de la piel ayuda a mantener su brillo. 
+Las joyas guardadas por mucho tiempo se empañan más rápido.
+</p>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- QUE EVITAR -->
+<div class="p-6 bg-[#f9f7f5] border-t">
+
+<h3 class="font-semibold mb-4 text-red-500 flex items-center gap-2">
+  ✖ QUÉ EVITAR
+</h3>
+
+<div class="grid md:grid-cols-2 gap-4 text-sm">
+
+<div class="bg-white p-4 rounded-xl border">
+<strong>Evitar perfumes y lociones</strong>
+<p class="text-[#6b5b4f]">
+Aplica perfumes y cremas antes de ponerte las joyas. 
+Los químicos aceleran el empañado.
+</p>
+</div>
+
+<div class="bg-white p-4 rounded-xl border">
+<strong>Retirar al cocinar</strong>
+<p class="text-[#6b5b4f]">
+El huevo, ajo y cebolla contienen azufre que oxida la plata inmediatamente.
+</p>
+</div>
+
+<div class="bg-white p-4 rounded-xl border">
+<strong>No mojar con agua de mar ni cloro</strong>
+<p class="text-[#6b5b4f]">
+La sal y el cloro generan manchas oscuras difíciles de remover.
+</p>
+</div>
+
+<div class="bg-white p-4 rounded-xl border">
+<strong>No frotar con materiales abrasivos</strong>
+<p class="text-[#6b5b4f]">
+El papel o cepillos duros rayan la superficie. Usa paños suaves.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- ================= PLATA 925 ================= -->
+<div id="plata925" class="material">
+
+<div class="bg-[#efe7df] rounded-2xl overflow-hidden border">
+
+<!-- HEADER -->
+<div class="p-6 flex items-center gap-4">
+  <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center">
+    ⚪
+  </div>
+
+  <div>
+    <h2 class="font-serif text-xl">Plata 925</h2>
+    <span class="text-xs bg-gray-500 text-white px-3 py-1 rounded-full">Sterling Silver</span>
+  </div>
+</div>
+
+<p class="px-6 pb-6 text-sm text-[#4b3f36]">
+La plata 925 o Sterling Silver es el estándar internacional con 92.5% de plata pura y 7.5% de cobre para mayor dureza. 
+Es la plata más usada en joyería fina por su equilibrio entre pureza y resistencia.
+</p>
+
+<!-- CONTENIDO -->
+<div class="bg-white p-6 grid md:grid-cols-2 gap-8 items-start">
+
+<!-- IMAGEN -->
+<img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a"
+class="rounded-xl w-full h-[320px] object-cover">
+
+<!-- QUÉ HACER -->
+<div>
+
+<h3 class="font-semibold mb-4 text-green-700 flex items-center gap-2">
+✔ QUÉ HACER
+</h3>
+
+<div class="space-y-5 text-sm">
+
+<div>
+<strong>Limpieza semanal con paño suave</strong>
+<p class="text-[#6b5b4f]">
+Un paño de microfibra o específico para plata es suficiente para el mantenimiento semanal. 
+Frota con suavidad en la dirección de las vetas del metal.
+</p>
+</div>
+
+<div>
+<strong>Solución casera para limpieza profunda</strong>
+<p class="text-[#6b5b4f]">
+Una vez al mes puedes limpiarla con una solución de agua tibia + bicarbonato de sodio. 
+Frota suavemente, enjuaga bien y seca con paño limpio.
+</p>
+</div>
+
+<div>
+<strong>Guardar bien almacenada</strong>
+<p class="text-[#6b5b4f]">
+Usa bolsitas de tela o cajitas individuales. 
+El contacto con el aire y la humedad es el principal enemigo de la plata 925.
+</p>
+</div>
+
+<div>
+<strong>Ponértela al final del arreglo</strong>
+<p class="text-[#6b5b4f]">
+Las joyas son lo último que te pones y lo primero que te quitas. 
+Así evitas contacto con perfumes, cremas y químicos.
+</p>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- QUÉ EVITAR -->
+<div class="p-6 bg-[#f9f7f5] border-t">
+
+<h3 class="font-semibold mb-4 text-red-500 flex items-center gap-2">
+✖ QUÉ EVITAR
+</h3>
+
+<div class="grid md:grid-cols-2 gap-4 text-sm">
+
+<div class="bg-white p-4 rounded-xl border">
+<strong>Evitar productos con azufre</strong>
+<p class="text-[#6b5b4f]">
+Caucho, gomas y algunos textiles reaccionan con la plata y la manchan de negro. 
+Evita guardarlas cerca de bolsas de goma.
+</p>
+</div>
+
+<div class="bg-white p-4 rounded-xl border">
+<strong>No dejar al sol ni en ambientes húmedos</strong>
+<p class="text-[#6b5b4f]">
+El baño, la cocina o espacios con vapor aceleran la oxidación. 
+Guarda tus joyas en lugares secos.
+</p>
+</div>
+
+<div class="bg-white p-4 rounded-xl border">
+<strong>Retirar al nadar y ducharte</strong>
+<p class="text-[#6b5b4f]">
+El agua clorada y el agua caliente desgastan el acabado y generan manchas.
+</p>
+</div>
+
+<div class="bg-white p-4 rounded-xl border">
+<strong>Evitar limpiezas con productos para oro</strong>
+<p class="text-[#6b5b4f]">
+Los productos para oro pueden dañar la plata. 
+Usa limpiadores específicos o métodos suaves.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- ================= ENCHAPADO ================= -->
+<div id="enchapado" class="material">
+
+<div class="bg-[#efe7df] rounded-2xl overflow-hidden border">
+
+<!-- HEADER -->
+<div class="p-6 flex items-center gap-4">
+  <div class="w-10 h-10 rounded-full bg-[#c8a97e]/30 flex items-center justify-center">
+    👑
+  </div>
+
+  <div>
+    <h2 class="font-serif text-xl">Plata Enchapada en Oro</h2>
+    <span class="text-xs bg-[#c8a97e] text-white px-3 py-1 rounded-full">Gold Filled</span>
+  </div>
+</div>
+
+<p class="px-6 pb-6 text-sm text-[#4b3f36]">
+La plata enchapada en oro tiene una base de plata 925 o plata 950 cubierta con una capa de oro 18k mediante proceso electrolítico. 
+Es importante cuidarla con especial atención ya que la capa de oro puede desgastarse con el tiempo si no se da el mantenimiento adecuado.
+</p>
+
+<!-- CONTENIDO -->
+<div class="bg-white p-6 grid md:grid-cols-2 gap-8 items-start">
+
+<!-- IMAGEN -->
+<img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638"
+class="rounded-xl w-full h-[320px] object-cover">
+
+<!-- QUÉ HACER -->
+<div>
+
+<h3 class="font-semibold mb-4 text-green-700 flex items-center gap-2">
+✔ QUÉ HACER
+</h3>
+
+<div class="space-y-5 text-sm">
+
+<div>
+<strong>Limpiar solo con paño seco</strong>
+<p class="text-[#6b5b4f]">
+Un paño de microfibra suave es suficiente. 
+El enchapado en oro es más delicado y los líquidos pueden acelerar el desgaste de la capa.
+</p>
+</div>
+
+<div>
+<strong>Guardar de forma individual</strong>
+<p class="text-[#6b5b4f]">
+Guarda cada pieza en su bolsita o cajita por separado. 
+El roce con otras joyas puede rayar y desgastar la capa de oro.
+</p>
+</div>
+
+<div>
+<strong>Manos limpias antes de usar</strong>
+<p class="text-[#6b5b4f]">
+La grasa natural de las manos y las cremas aceleran el desgaste. 
+Lávate bien las manos antes de manipular joyas enchapadas.
+</p>
+</div>
+
+<div>
+<strong>Uso ocasional y rotación</strong>
+<p class="text-[#6b5b4f]">
+Para prolongar la vida del enchapado, alterna su uso con otras joyas. 
+Cuanto menos roce constante, más dura la capa de oro.
+</p>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- QUÉ EVITAR -->
+<div class="p-6 bg-[#f9f7f5] border-t">
+
+<h3 class="font-semibold mb-4 text-red-500 flex items-center gap-2">
+✖ QUÉ EVITAR
+</h3>
+
+<div class="grid md:grid-cols-2 gap-4 text-sm">
+
+<div class="bg-white p-4 rounded-xl border">
+<strong>No mojar bajo ninguna circunstancia</strong>
+<p class="text-[#6b5b4f]">
+El agua — incluyendo la transpiración intensa — es el mayor enemigo del enchapado. 
+Retira la joya antes de hacer ejercicio, ducharte o nadar.
+</p>
+</div>
+
+<div class="bg-white p-4 rounded-xl border">
+<strong>Cero perfumes, cremas ni alcohol</strong>
+<p class="text-[#6b5b4f]">
+Cualquier producto aplicado sobre la joya puede disolver la capa de oro en pocas semanas. 
+Siempre aplica antes de ponerte las joyas.
+</p>
+</div>
+
+<div class="bg-white p-4 rounded-xl border">
+<strong>Nunca limpiar con abrasivos ni químicos</strong>
+<p class="text-[#6b5b4f]">
+Los limpiadores de plata, bicarbonato o cepillos eliminan la capa de oro junto con la suciedad. 
+Solo paño seco.
+</p>
+</div>
+
+<div class="bg-white p-4 rounded-xl border">
+<strong>Evitar el calor directo</strong>
+<p class="text-[#6b5b4f]">
+El secador de pelo, el sol directo prolongado o ambientes muy calurosos pueden afectar la adherencia del oro sobre la plata.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- ================= TITANIO ================= -->
+<div id="titanio" class="material">
+
+<div class="bg-[#efe7df] rounded-2xl overflow-hidden border">
+
+<!-- HEADER -->
+<div class="p-6 flex items-center gap-4">
+  <div class="w-10 h-10 rounded-full bg-gray-400 flex items-center justify-center">
+    ⚙️
+  </div>
+
+  <div>
+    <h2 class="font-serif text-xl">Titanio</h2>
+    <span class="text-xs bg-gray-600 text-white px-3 py-1 rounded-full">Implant Grade</span>
+  </div>
+</div>
+
+<p class="px-6 pb-6 text-sm text-[#4b3f36]">
+El titanio grado implante (implant grade) es uno de los materiales más seguros y recomendados para piercings. 
+Es hipoalergénico, ultraligero y altamente resistente a la corrosión, lo que lo hace ideal para pieles sensibles y perforaciones en proceso de cicatrización.
+</p>
+
+<!-- CONTENIDO -->
+<div class="bg-white p-6 grid md:grid-cols-2 gap-8 items-start">
+
+<!-- IMAGEN -->
+<img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb"
+class="rounded-xl w-full h-[320px] object-cover">
+
+<!-- QUÉ HACER -->
+<div>
+
+<h3 class="font-semibold mb-4 text-green-700 flex items-center gap-2">
+✔ QUÉ HACER
+</h3>
+
+<div class="space-y-5 text-sm">
+
+<div>
+<strong>Mantener limpieza adecuada</strong>
+<p class="text-[#6b5b4f]">
+Limpia el piercing con solución salina o suero fisiológico. 
+Evita manipularlo innecesariamente para no irritar la zona.
+</p>
+</div>
+
+<div>
+<strong>Ideal para primeras perforaciones</strong>
+<p class="text-[#6b5b4f]">
+El titanio es recomendado por profesionales para perforaciones nuevas debido a su alta biocompatibilidad y bajo riesgo de reacción.
+</p>
+</div>
+
+<div>
+<strong>Uso continuo sin problema</strong>
+<p class="text-[#6b5b4f]">
+Puedes usarlo a diario, incluso al dormir o ducharte, ya que no se oxida ni se deteriora con el agua.
+</p>
+</div>
+
+<div>
+<strong>Revisar el ajuste periódicamente</strong>
+<p class="text-[#6b5b4f]">
+Asegúrate de que las piezas estén bien ajustadas para evitar pérdidas o molestias.
+</p>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- QUÉ EVITAR -->
+<div class="p-6 bg-[#f9f7f5] border-t">
+
+<h3 class="font-semibold mb-4 text-red-500 flex items-center gap-2">
+✖ QUÉ EVITAR
+</h3>
+
+<div class="grid md:grid-cols-2 gap-4 text-sm">
+
+<div class="bg-white p-4 rounded-xl border">
+<strong>No manipular constantemente</strong>
+<p class="text-[#6b5b4f]">
+Tocar o girar el piercing con frecuencia puede irritar la piel y retrasar la cicatrización.
+</p>
+</div>
+
+<div class="bg-white p-4 rounded-xl border">
+<strong>Evitar alcohol o productos agresivos</strong>
+<p class="text-[#6b5b4f]">
+El alcohol, agua oxigenada o productos fuertes pueden resecar la piel y afectar el proceso de curación.
+</p>
+</div>
+
+<div class="bg-white p-4 rounded-xl border">
+<strong>No cambiar la joya antes de tiempo</strong>
+<p class="text-[#6b5b4f]">
+Es importante respetar el tiempo de cicatrización antes de cambiar el piercing para evitar infecciones o irritaciones.
+</p>
+</div>
+
+<div class="bg-white p-4 rounded-xl border">
+<strong>Evitar golpes o fricción constante</strong>
+<p class="text-[#6b5b4f]">
+El roce con ropa, cabello o audífonos puede generar inflamación o molestias en la zona perforada.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<script>
+function show(id, btn){
+
+  // Ocultar todos
+  document.querySelectorAll(".material").forEach(el=>{
+    el.classList.remove("active");
+  });
+
+  // Mostrar el seleccionado
+  const target = document.getElementById(id);
+  if(target){
+    target.classList.add("active");
+  }
+
+  // Tabs
+  document.querySelectorAll(".tab").forEach(b=>{
+    b.classList.remove("active");
+  });
+
+  btn.classList.add("active");
+}
+</script>
+
+
+<section class="py-16 px-6">
+
+  <!-- TÍTULO -->
+  <div class="text-center mb-12">
+    <h2 class="text-2xl md:text-3xl font-serif mb-2">
+      Consejos Generales para Todas las Joyas
+    </h2>
+    <p class="text-sm text-[#7a6a5f]">
+      Hábitos que aplican para cualquier material y tipo de joya.
+    </p>
+  </div>
+
+  <!-- CARDS -->
+  <div class="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+
+    <!-- CARD 1 -->
+    <div class="bg-white p-6 rounded-xl border text-center hover:shadow-md transition">
+      <div class="w-10 h-10 mx-auto mb-4 rounded-full bg-[#c8a97e]/20 flex items-center justify-center text-[#c8a97e]">
+        ♡
+      </div>
+      <h3 class="font-semibold mb-2 text-sm">
+        Ponlas de último, quítatelas primero
+      </h3>
+      <p class="text-xs text-[#6b5b4f] leading-relaxed">
+        Siempre ponte las joyas después de aplicar perfume, maquillaje y cremas.
+        Quítatelas antes de ducharte o hacer ejercicio.
+      </p>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="bg-white p-6 rounded-xl border text-center hover:shadow-md transition">
+      <div class="w-10 h-10 mx-auto mb-4 rounded-full bg-[#c8a97e]/20 flex items-center justify-center text-[#c8a97e]">
+        🌙
+      </div>
+      <h3 class="font-semibold mb-2 text-sm">
+        No duermas con tus joyas
+      </h3>
+      <p class="text-xs text-[#6b5b4f] leading-relaxed">
+        El roce con la almohada y el movimiento durante el sueño pueden desgastar
+        los acabados y deformar estructuras delicadas.
+      </p>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="bg-white p-6 rounded-xl border text-center hover:shadow-md transition">
+      <div class="w-10 h-10 mx-auto mb-4 rounded-full bg-[#c8a97e]/20 flex items-center justify-center text-[#c8a97e]">
+        🔍
+      </div>
+      <h3 class="font-semibold mb-2 text-sm">
+        Revisa tus joyas regularmente
+      </h3>
+      <p class="text-xs text-[#6b5b4f] leading-relaxed">
+        Una inspección mensual permite detectar cierres flojos, soldaduras débiles
+        o cambios de color antes de que se conviertan en un problema mayor.
+      </p>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="bg-white p-6 rounded-xl border text-center hover:shadow-md transition">
+      <div class="w-10 h-10 mx-auto mb-4 rounded-full bg-[#c8a97e]/20 flex items-center justify-center text-[#c8a97e]">
+        🛠
+      </div>
+      <h3 class="font-semibold mb-2 text-sm">
+        Mantenimiento profesional
+      </h3>
+      <p class="text-xs text-[#6b5b4f] leading-relaxed">
+        Una limpieza profesional una vez al año permite pulir, reparar y devolver
+        el brillo original a tus piezas.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="px-6 py-16 bg-[#f7f3ef]">
+
+  <div class="max-w-5xl mx-auto bg-gradient-to-r from-[#3b2216] to-[#2b1a12] text-white rounded-2xl py-12 px-6 text-center shadow-lg">
+
+    <!-- TÍTULO -->
+    <h2 class="text-2xl md:text-3xl font-serif mb-3">
+      ¿Tienes dudas sobre tu joya?
+    </h2>
+
+    <!-- TEXTO -->
+    <p class="text-sm text-[#d6c3b1] mb-8 max-w-lg mx-auto">
+      Nuestro equipo está disponible para asesorarte sobre el cuidado y mantenimiento de cada pieza.
+    </p>
+
+    <!-- BOTONES -->
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+
+      <!-- WHATSAPP -->
+      <a href="https://wa.me/51932735548" target="_blank">
+        <button class="bg-[#c8a97e] text-white px-6 py-3 rounded-full text-sm flex items-center gap-2 hover:opacity-80 transition">
+          💬 Consultar por WhatsApp
+        </button>
+      </a>
+
+      <!-- FORMULARIO -->
+      <a href="index.html.#contacto">
+        <button class="border border-white/40 px-6 py-3 rounded-full text-sm flex items-center gap-2 hover:bg-white hover:text-[#3b2a23] transition">
+          ✉️ Formulario de Contacto
+        </button>
+      </a>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTNOTE -->
+  <p class="text-xs text-[#8a7a6f] text-center mt-8">
+    Última actualización: marzo 2026 — Guía informativa Little Women. 
+    Consulta siempre a un joyero profesional ante dudas específicas.
+  </p>
+
+</section>
+</body>
+
+</html>

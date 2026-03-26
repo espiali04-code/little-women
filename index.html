@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Little Women</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+.btn {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #f1ebe5;
+  font-size: 12px;
+}
+.btn.active {
+  background: #3b2a23;
+  color: white;
+}
+</style>
+
+</head>
+
+
+
+<body class="bg-[#f7f3ef] text-[#3b2a23]">
+
+<!-- HERO VIDEO -->
+<!-- NAVBAR -->
+<header class="absolute top-0 left-0 w-full z-50 flex justify-between items-center px-12 py-6 text-white">
+
+  <a href="index.html" class="text-2xl font-serif tracking-wide">
+    LITTLE WOMEN
+  </a>
+
+  <nav class="flex gap-8 text-sm items-center">
+
+    <a href="index.html" class="hover:text-[#c8a97e] transition">Inicio</a>
+        <a href="#envio" class="hover:text-[#c8a97e] transition">Envío</a>
+    <a href="#garantia" class="hover:text-[#c8a97e] transition">Garantía</a>
+    <a href="#contacto" class="hover:text-[#c8a97e] transition">Contacto</a>
+
+    <a href="#catalogo"
+       class="border border-white/50 px-5 py-2 rounded-full hover:bg-white hover:text-black transition">
+       Ver Catálogo
+    </a>
+
+  </nav>
+</header>
+
+
+<!-- HERO -->
+<section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+
+  <!-- VIDEO 1 -->
+  <video id="video1"
+    class="absolute inset-0 w-full h-full object-cover"
+    autoplay muted playsinline>
+    <source src="https://res.cloudinary.com/dbq2wujte/video/upload/v1774074759/Firefly_Luxury_product_video_of_three_pairs_of_18K_gold_earrings_displayed_on_minimal_white_stands_f1mpdy.mp4" type="video/mp4">
+  </video>
+
+  <!-- VIDEO 2 -->
+  <video id="video2"
+    class="absolute inset-0 w-full h-full object-cover hidden"
+    muted playsinline>
+    <source src="https://res.cloudinary.com/dbq2wujte/video/upload/v1774074759/Firefly_Luxury_product_video_showcasing_a_collection_of_925_silver_jewelry_including_necklaces_ear_dyo4cg.mp4" type="video/mp4">
+  </video>
+
+  <!-- OVERLAY -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- CONTENIDO -->
+  <div class="relative z-10 max-w-2xl px-6">
+    <h1 class="text-4xl md:text-5xl font-serif mb-6">
+      La elegancia que mereces llevar
+    </h1>
+  </div>
+
+</section>
+
+<!-- FILTROS -->
+<section class="px-12 mb-10">
+  <div class="bg-white p-6 rounded-2xl shadow-sm">
+
+    <p class="text-xs mb-2">MATERIAL</p>
+    <div class="flex gap-3 mb-4">
+      <button class="btn active" onclick="setMaterial('oro', this)">Oro 18k</button>
+      <button class="btn" onclick="setMaterial('plata950', this)">Plata 950</button>
+      <button class="btn" onclick="setMaterial('plata925', this)">Plata 925</button>
+      <button class="btn" onclick="setMaterial('titanio', this)">Titanio</button>
+    </div>
+
+    <p class="text-xs mb-2">TIPO</p>
+    <div class="flex gap-3">
+      <button class="btn active" onclick="setTipo('collar', this)">Collar</button>
+      <button class="btn" onclick="setTipo('dije', this)">Dije</button>
+      <button class="btn" onclick="setTipo('pulsera', this)">Pulsera</button>
+      <button class="btn" onclick="setTipo('piercing', this)">Piercing</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRODUCTOS -->
+<section id="catalogo" class="px-12 pb-20">
+  <div id="productos" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"></div>
+</section>
+
+<!-- ENVÍO Y ENTREGA -->
+
+<section id="envio" class="px-12 py-20 bg-[#f7f3ef]">
+
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+
+    <!-- IMAGEN -->
+    <div class="relative">
+
+      <img 
+        src="https://images.unsplash.com/photo-1602752250015-52934bc45613"
+        class="rounded-2xl w-full h-[400px] object-cover"
+      >
+
+      <!-- TAG -->
+      <div class="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-xl shadow text-sm">
+        ✨ Envío 100% Gratis
+      </div>
+
+    </div>
+
+    <!-- TEXTO -->
+    <div>
+
+      <p class="text-xs text-[#c8a97e] tracking-widest mb-2">
+        ENVÍO Y ENTREGA
+      </p>
+
+      <h2 class="text-4xl font-serif mb-4 leading-tight">
+        Recibe tu joya <br> donde estés
+      </h2>
+
+      <p class="text-gray-600 mb-8 text-sm leading-relaxed">
+        Queremos que tu experiencia sea tan especial como nuestras joyas. 
+        Por eso, el envío es completamente gratuito y aseguramos cada pedido hasta que llegue a tus manos. 
+        Si tu pedido es personalizado, coordinamos el tiempo de confección.
+      </p>
+
+      <!-- BENEFICIOS -->
+      <div class="grid grid-cols-2 gap-6">
+
+        <!-- ITEM -->
+        <div class="flex gap-3">
+          <div class="bg-[#efe7df] p-3 rounded-full">🚚</div>
+          <div>
+            <p class="font-semibold text-sm">Envío Gratuito</p>
+            <p class="text-xs text-gray-500">
+              En todos tus pedidos, sin monto mínimo.
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="flex gap-3">
+          <div class="bg-[#efe7df] p-3 rounded-full">⏱️</div>
+          <div>
+            <p class="font-semibold text-sm">Entrega en 4-5 días</p>
+            <p class="text-xs text-gray-500">
+              Despacho en 48h hábiles desde Piura.
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="flex gap-3">
+          <div class="bg-[#efe7df] p-3 rounded-full">🎁</div>
+          <div>
+            <p class="font-semibold text-sm">Packaging Premium</p>
+            <p class="text-xs text-gray-500">
+              Incluye estuche y pañito de limpieza.
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="flex gap-3">
+          <div class="bg-[#efe7df] p-3 rounded-full">🔄</div>
+          <div>
+            <p class="font-semibold text-sm">Cambios sin costo</p>
+            <p class="text-xs text-gray-500">
+              Te ayudamos sin cobrar adicional.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GARANTÍA -->
+<section id="garantia" class="px-12 py-20 bg-[#f7f3ef] text-center">
+
+  <!-- TITULO -->
+  <p class="text-xs tracking-widest text-[#c8a97e] mb-2">
+    NUESTRA PROMESA
+  </p>
+
+  <h2 class="text-4xl font-serif mb-4">
+    Garantía de Autenticidad
+  </h2>
+
+  <p class="text-gray-600 text-sm max-w-xl mx-auto mb-12">
+    Compramos con confianza. Cada joya Little Women está respaldada por nuestra 
+    garantía de autenticidad total.
+  </p>
+
+  <!-- CARDS PRINCIPALES -->
+  <div class="grid md:grid-cols-3 gap-6 mb-12">
+
+    <!-- ORO -->
+    <div class="bg-[#efe7df] rounded-2xl p-6 text-center">
+      <div class="w-12 h-12 bg-yellow-400 rounded-full mx-auto mb-4"></div>
+
+      <h3 class="font-semibold">Oro 18k</h3>
+
+      <span class="text-xs bg-white px-3 py-1 rounded-full inline-block my-2">
+        Pureza 75%
+      </span>
+
+      <p class="text-xs text-gray-600">
+        El estándar más deseado en joyería fina. Brillo duradero y resistente a la oxidación.
+      </p>
+    </div>
+
+    <!-- PLATA 950 -->
+    <div class="bg-[#f1f1f1] rounded-2xl p-6 text-center">
+      <div class="w-12 h-12 bg-gray-300 rounded-full mx-auto mb-4"></div>
+
+      <h3 class="font-semibold">Plata 950</h3>
+
+      <span class="text-xs bg-white px-3 py-1 rounded-full inline-block my-2">
+        Pureza 95%
+      </span>
+
+      <p class="text-xs text-gray-600">
+        Alta pureza, ideal para pieles sensibles. Acabado brillante y premium.
+      </p>
+    </div>
+
+    <!-- PLATA 925 -->
+    <div class="bg-[#f1f1f1] rounded-2xl p-6 text-center">
+      <div class="w-12 h-12 bg-gray-300 rounded-full mx-auto mb-4"></div>
+
+      <h3 class="font-semibold">Plata 925</h3>
+
+      <span class="text-xs bg-white px-3 py-1 rounded-full inline-block my-2">
+        Pureza 92.5%
+      </span>
+
+      <p class="text-xs text-gray-600">
+        El estándar internacional “Sterling Silver”. Durabilidad y elegancia garantizadas.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- BLOQUE INFERIOR -->
+  <div class="bg-white rounded-2xl p-8 shadow-sm">
+
+    <div class="grid md:grid-cols-4 gap-6 text-center mb-6">
+
+      <div>
+        <div class="bg-[#efe7df] w-10 h-10 flex items-center justify-center rounded-full mx-auto mb-2">✔️</div>
+        <p class="text-sm font-medium">Certificado de Autenticidad</p>
+        <p class="text-xs text-gray-500">
+          Cada joya incluye su certificado.
+        </p>
+      </div>
+
+      <div>
+        <div class="bg-[#efe7df] w-10 h-10 flex items-center justify-center rounded-full mx-auto mb-2">🧪</div>
+        <p class="text-sm font-medium">Análisis de Pureza</p>
+        <p class="text-xs text-gray-500">
+          Probamos cada material antes de trabajar.
+        </p>
+      </div>
+
+      <div>
+        <div class="bg-[#efe7df] w-10 h-10 flex items-center justify-center rounded-full mx-auto mb-2">🏪</div>
+        <p class="text-sm font-medium">Proveedores Verificados</p>
+        <p class="text-xs text-gray-500">
+          Solo trabajamos con proveedores certificados.
+        </p>
+      </div>
+
+      <div>
+        <div class="bg-[#efe7df] w-10 h-10 flex items-center justify-center rounded-full mx-auto mb-2">🛠️</div>
+        <p class="text-sm font-medium">Elaboración Artesanal</p>
+        <p class="text-xs text-gray-500">
+          Cada pieza trabajada por expertos.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- FOOT -->
+    <div class="flex justify-between items-center text-sm text-gray-600 border-t pt-4">
+
+      <div class="flex items-center gap-2">
+        ⭐ Todas nuestras joyas incluyen certificado físico
+      </div>
+
+      <div class="text-[#c8a97e] font-medium">
+        ✔ Garantía vitalicia
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACTO PREMIUM -->
+<section id="contacto" class="px-12 py-20 bg-[#f7f3ef]">
+
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+
+    <!-- IZQUIERDA -->
+    <div>
+
+      <p class="text-xs tracking-widest text-[#c8a97e] mb-2">
+        ESCRÍBENOS
+      </p>
+
+      <h2 class="text-4xl font-serif mb-4 leading-tight">
+        Hablemos de <br> tu próxima joya
+      </h2>
+
+      <p class="text-gray-600 text-sm mb-8">
+        ¿Tienes alguna duda sobre un producto, quieres hacer un pedido especial o simplemente quieres saber más?
+        Escríbenos y te respondemos pronto.
+      </p>
+
+      <!-- CONTACTO -->
+      <div class="space-y-6 mb-8">
+
+        <!-- WHATSAPP -->
+        <div class="flex items-center gap-4">
+          <div class="bg-[#efe7df] p-3 rounded-full">📱</div>
+          <div>
+            <p class="text-xs text-gray-500">WhatsApp</p>
+            <a href="https://wa.me/51932735548" target="_blank" class="font-medium hover:text-[#c8a97e]">
+              +51 932 735 548
+            </a>
+          </div>
+        </div>
+
+        <!-- INSTAGRAM -->
+        <div class="flex items-center gap-4">
+          <div class="bg-[#efe7df] p-3 rounded-full">📸</div>
+          <div>
+            <p class="text-xs text-gray-500">Instagram</p>
+            <a href="https://www.instagram.com/joyeria_littlewomen/" target="_blank" class="font-medium hover:text-[#c8a97e]">
+              @joyeria_littlewomen
+            </a>
+          </div>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="flex items-center gap-4">
+          <div class="bg-[#efe7df] p-3 rounded-full">✉️</div>
+          <div>
+            <p class="text-xs text-gray-500">Email</p>
+            <a href="mailto:littlewomen.950@gmail.com" class="font-medium hover:text-[#c8a97e]">
+              littlewomen.950@gmail.com
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- IMAGEN -->
+      <img 
+        src="https://images.unsplash.com/photo-1611652022419-a9419f74343d"
+        class="rounded-2xl w-full h-64 object-cover"
+      >
+
+    </div>
+
+    <!-- DERECHA (FORMULARIO) -->
+    <div class="bg-white p-8 rounded-2xl shadow-sm">
+
+      <h3 class="font-serif text-xl mb-6">
+        Envíanos un mensaje
+      </h3>
+
+      <form class="grid gap-4">
+
+        <div class="grid grid-cols-2 gap-4">
+          <input type="text" placeholder="Tu nombre" class="p-3 rounded border text-sm">
+          <input type="email" placeholder="tu@email.com" class="p-3 rounded border text-sm">
+        </div>
+
+        <input type="text" placeholder="+51 000 000 000" class="p-3 rounded border text-sm">
+
+        <select class="p-3 rounded border text-sm">
+          <option>Selecciona una opción</option>
+          <option>Consulta producto</option>
+          <option>Pedido personalizado</option>
+          <option>Información general</option>
+        </select>
+
+        <textarea placeholder="Cuéntanos qué necesitas..." class="p-3 rounded border text-sm h-28"></textarea>
+
+        <button class="bg-[#c8a97e] text-white py-3 rounded-full hover:opacity-90 transition">
+          Enviar Mensaje
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CTA FINAL -->
+<section class="px-12 pb-20">
+
+  <div class="bg-gradient-to-r from-[#3b2a23] to-[#1f140f] rounded-2xl px-10 py-10 flex flex-col md:flex-row justify-between items-center gap-6">
+
+    <!-- TEXTO -->
+    <div>
+      <h2 class="text-2xl md:text-3xl font-serif text-white mb-2">
+        ¿Lista para tu próxima joya?
+      </h2>
+
+      <p class="text-gray-300 text-sm">
+        Explora nuestro catálogo y encuentra la pieza perfecta para ti.
+      </p>
+    </div>
+
+    <!-- BOTÓN -->
+    <a href="#catalogo">
+      <button class="bg-[#c8a97e] text-white px-6 py-3 rounded-full hover:opacity-90 transition">
+        Ver Catálogo
+      </button>
+    </a>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gradient-to-r from-[#3b2a23] to-[#1f140f] text-white px-12 py-16">
+
+  <div class="grid md:grid-cols-4 gap-10">
+
+    <!-- MARCA -->
+    <div>
+      <h2 class="text-3xl font-serif mb-4">LITTLE WOMEN</h2>
+
+      <p class="text-sm text-gray-300 mb-6">
+        Joyas en oro 18k, plata 950 y plata 925 con autenticidad certificada y envío gratuito a todo el país.
+      </p>
+
+      <!-- REDES -->
+      <div class="flex gap-4">
+
+        <!-- INSTAGRAM -->
+        <a href="https://www.instagram.com/joyeria_littlewomen/" target="_blank"
+           class="bg-[#4a3329] p-3 rounded-full hover:bg-[#c8a97e] transition">
+          📸
+        </a>
+
+        <!-- WHATSAPP -->
+        <a href="https://wa.me/51932735548" target="_blank"
+           class="bg-[#4a3329] p-3 rounded-full hover:bg-[#c8a97e] transition">
+          💬
+        </a>
+
+      </div>
+    </div>
+
+    <!-- CATÁLOGO -->
+    <div>
+      <h3 class="font-semibold mb-4">Catálogo</h3>
+
+      <ul class="space-y-2 text-sm text-gray-300">
+
+        <!-- FILTROS EN catalogo.html -->
+        <li><a href="#catalogo" class="hover:text-[#c8a97e]">Pulseras</a></li>
+        <li><a href="#catalogo" class="hover:text-[#c8a97e]">Dijes</a></li>
+        <li><a href="#catalogo" class="hover:text-[#c8a97e]">Collares</a></li>
+        <li><a href="#catalogo" class="hover:text-[#c8a97e]">Piercings</a></li>
+
+        <li><a href="#catalogo" class="hover:text-[#c8a97e]">Oro 18k</a></li>
+        <li><a href="#catalogo" class="hover:text-[#c8a97e]">Plata 950</a></li>
+        <li><a href="#catalogo" class="hover:text-[#c8a97e]">Plata 925</a></li>
+
+      </ul>
+    </div>
+
+    <!-- NOSOTROS -->
+    <div>
+      <h3 class="font-semibold mb-4">Nosotros</h3>
+
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li><a href="#" class="hover:text-[#c8a97e]">Nuestra Historia</a></li>
+        <li><a href="#" class="hover:text-[#c8a97e]">Autenticidad</a></li>
+      </ul>
+    </div>
+
+    <!-- AYUDA -->
+    <div>
+      <h3 class="font-semibold mb-4">Ayuda</h3>
+
+      <ul class="space-y-2 text-sm text-gray-300">
+
+        <li><a href="faq.html" class="hover:text-[#c8a97e]">Preguntas Frecuentes</a></li>
+        <li><a href="#envio" class="hover:text-[#c8a97e]">Envíos</a></li>
+        <li><a href="cambios.html" class="hover:text-[#c8a97e]">Cambios y Devoluciones</a></li>
+        <li><a href="cuidados.html" class="hover:text-[#c8a97e]">Cuidado de Joyas</a></li>
+        <li><a href="#catalogo" class="hover:text-[#c8a97e]">Guía de Piercings</a></li>
+
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- LINEA -->
+  <div class="border-t border-[#4a3329] mt-10 pt-6 flex flex-col md:flex-row justify-between text-xs text-gray-400">
+
+    <p>© 2026 Little Women. Todos los derechos reservados.</p>
+
+    <div class="flex gap-6 mt-2 md:mt-0">
+      <a href="#" class="hover:text-[#c8a97e]">Términos y condiciones</a>
+      <a href="#" class="hover:text-[#c8a97e]">Política de privacidad</a>
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- SCRIPT (SIEMPRE ABAJO) -->
+<script>;
+
+// GENERADOR AUTOMÁTICO (60 productos)
+const productos = [
+
+  // ================= PLATA 950 =================
+
+  {
+    nombre: "Collar con dije de Plata 950 - Estilo Little SanSef",
+    material: "plata950",
+    tipo: "collar",
+    precio: 150,
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774078862/DIJE_B_950_mdassc.png",
+    hover: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774078861/DIJES_ORO18K_tsujy8.jpg"
+  },
+
+  {
+    nombre: "Collar con dije de Plata 950 - Estilo SanSef",
+    material: "plata950",
+    tipo: "collar",
+    precio: 150,
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774078861/DIJE_T_950_se2tdp.png",
+    hover: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774078861/DIJES_ORO2_18K_swldvr.jpg"
+  },
+
+{
+    nombre: "Collar Alianza Lima",
+    material: "plata950",
+    tipo: "collar",
+    precio: 180,
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774484110/DIJE_ALIANZA_TODO_PLATA950_ilaodb.png"
+  },
+
+  {
+    nombre: "Dije Letra Estilo SanSef",
+    material: "plata950",
+    tipo: "dije",
+    precio: 50,
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774078861/DIJE_T_950_se2tdp.png",
+    hover: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774078861/DIJES_ORO2_18K_swldvr.jpg"
+  },
+
+  {
+    nombre: "Dije Cruz",
+    material: "plata950",
+    tipo: "dije",
+    precio: 55,
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774079375/COLLAR_CON_CRUZ_950_-_CS_snnscl.png"
+  },
+
+
+  {
+    nombre: "Collar Cruz",
+    material: "plata950",
+    tipo: "collar",
+    precio: 170,
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774079375/COLLAR_CON_CRUZ_950_-_CS_snnscl.png"
+  },
+
+  {
+    nombre: "Collar Flor",
+    material: "plata950",
+    tipo: "collar",
+    precio: 150,
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774078864/DIJE_FLOR_950_-_CS_kvbjwl.png"
+  },
+
+  {
+    nombre: "Dije Flor",
+    material: "plata950",
+    tipo: "dije",
+    precio: 50,
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774078864/DIJE_FLOR_950_-_CS_kvbjwl.png"
+  },
+
+  {
+    nombre: "Collar Heart Cir",
+    material: "plata950",
+    tipo: "collar",
+    precio: 155,
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774078862/DIJE_CORAZ%C3%93N_CIRCULAR_PLA950_-_CS_bw2pcd.jpg"
+  },
+
+  {
+    nombre: "Dije Heart Cir",
+    material: "plata950",
+    tipo: "dije",
+    precio: 65,
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774078862/DIJE_CORAZ%C3%93N_CIRCULAR_PLA950_-_CS_bw2pcd.jpg"
+  },
+
+
+
+  {
+    nombre: "Collar Virgen",
+    material: "plata950",
+    tipo: "collar",
+    precio: 170,
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774079960/COLLAR_VIRGEN_1_950_CS_guy92i.png"
+  },
+
+  {
+    nombre: "Dije Virgen",
+    material: "plata950",
+    tipo: "dije",
+    precio: 70,
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774079960/COLLAR_VIRGEN_1_950_CS_guy92i.png"
+  },
+
+  {
+    nombre: "Dije U",
+    material: "plata950",
+    tipo: "dije",
+    precio: 70,
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774484135/DIJE_U_-_PLA950_bljc22.png"
+  },
+
+  // ================= ORO =================
+
+  {
+    nombre: "Collar con dije Estilo Serif",
+    material: "oro",
+    tipo: "collar",
+    precio: "Consultar",
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774484186/LETRA_I_18K_-_LETRA_2_cot6nj.png",
+    hover: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774078861/DIJES_ORO18K_tsujy8.jpg"
+  },
+
+  {
+    nombre: "Collar con dije Estilo Little Serif",
+    material: "oro",
+    tipo: "collar",
+    precio: "Consultar",
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774155149/LETRA_B_18K_-_LETRA_1_arfx05.png",
+    hover: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774078861/DIJES_ORO2_18K_swldvr.jpg"
+  },
+
+  {
+    nombre: "Dije Estilo Serif",
+    material: "oro",
+    tipo: "dije",
+    precio: "350",
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774484186/LETRA_I_18K_-_LETRA_2_cot6nj.png",
+    hover: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774078861/DIJES_ORO18K_tsujy8.jpg"
+  },
+
+  {
+    nombre: "Dije Estilo Little Serif",
+    material: "oro",
+    tipo: "dije",
+    precio: "360",
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774155149/LETRA_B_18K_-_LETRA_1_arfx05.png",
+    hover: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774078861/DIJES_ORO2_18K_swldvr.jpg"
+  },
+
+
+  {
+    nombre: "Pulsera Puñera",
+    material: "oro",
+    tipo: "pulsera",
+    precio: "Consultar",
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774488309/PULSERA_PU%C3%91ERA_18K_z82x6v.png"
+  },
+
+  {
+    nombre: "Pulsera Diamantina",
+    material: "oro",
+    tipo: "pulsera",
+    precio: "Consultar",
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774488263/PULSERA_MODELO_DIAMANTINA_ORO_18K_vj8zrb.png"
+  },
+
+  {
+    nombre: "Pulsera Eslabones",
+    material: "oro",
+    tipo: "pulsera",
+    precio: "Consultar",
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774488260/PULSERA_MODELO_ESLABONES_DAMA_18K_u4xkrd.png"
+  },
+
+  {
+    nombre: "Argollas Modelo 3",
+    material: "oro",
+    tipo: "piercing",
+    precio: 890,
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774157065/unnamed_hyckmj.jpg"
+  },
+
+  {
+    nombre: "Abridores Bombita",
+    material: "oro",
+    tipo: "piercing",
+    precio: 320,
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774488615/Aretes_Mini_-_Abridores_Bombita_18k_roxr3u.png"
+  },
+
+  {
+    nombre: "Abridores Corazón",
+    material: "oro",
+    tipo: "piercing",
+    precio: 320,
+    img: "https://res.cloudinary.com/dbq2wujte/image/upload/v1774488824/Aretes_Mini_-_Abridores_Coraz%C3%B3n_18K_new8bt.png"
+  }
+
+];
+
+const contenedor = document.getElementById("productos");
+
+function render(lista) {
+  contenedor.innerHTML = "";
+
+  lista.forEach(p => {
+    contenedor.innerHTML += `
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col">
+
+        <img src="${p.img}" class="w-full h-60 object-cover">
+
+        <div class="p-4 flex flex-col flex-grow">
+
+          <p class="text-xs ${p.material==="oro"?"text-[#c8a97e]":"text-gray-500"}">
+            ${p.material} · ${p.tipo}
+          </p>
+
+          <h3 class="text-sm font-semibold">${p.nombre}</h3>
+
+          <div class="mt-auto flex justify-between items-center pt-3">
+            <span class="font-bold">S/ ${p.precio}</span>
+
+            <a 
+  href="https://wa.me/51932735548?text=Hola,%20quiero%20consultar%20por%20${encodeURIComponent(p.nombre)}%20(${p.material}%20-%20${p.tipo})" 
+  target="_blank"
+  class="bg-[#3b2a23] text-white px-4 py-1 rounded-full text-xs text-center">
+  Consultar
+</a>
+          </div>
+
+        </div>
+      </div>
+    `;
+  });
+}
+
+let materialActivo = "oro";
+let tipoActivo = "collar";
+
+function setMaterial(m, btn) {
+  materialActivo = m;
+  activar(btn);
+  filtrar();
+}
+
+function setTipo(t, btn) {
+  tipoActivo = t;
+  activar(btn);
+  filtrar();
+}
+
+function activar(btn){
+  const grupo = btn.parentElement;
+  grupo.querySelectorAll(".btn").forEach(b=>b.classList.remove("active"));
+  btn.classList.add("active");
+}
+
+function filtrar(){
+  const filtrados = productos.filter(p =>
+    p.material === materialActivo &&
+    p.tipo === tipoActivo
+  );
+  render(filtrados);
+}
+
+// INICIO
+filtrar();
+
+</script>
+
+</body>
+<script>
+const v1 = document.getElementById("video1");
+const v2 = document.getElementById("video2");
+
+v1.onended = () => {
+  v1.classList.add("hidden");
+  v2.classList.remove("hidden");
+  v2.play();
+};
+
+v2.onended = () => {
+  v2.classList.add("hidden");
+  v1.classList.remove("hidden");
+  v1.play();
+};
+</script>
+</html> 
