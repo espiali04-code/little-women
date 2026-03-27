@@ -804,7 +804,12 @@ function render(lista) {
             <a 
   href="https://wa.me/51932735548?text=Hola,%20quiero%20consultar%20por%20${encodeURIComponent(p.nombre)}%20(${p.material}%20-%20${p.tipo})" 
   target="_blank"
-  class="bg-[#3b2a23] text-white px-4 py-1 rounded-full text-xs text-center">
+  class="bg-[#3b2a23] text-white px-4 py-2 rounded-full text-xs text-center
+       transition-all duration-300 ease-out
+       hover:bg-[#c8a97e]
+       hover:scale-105
+       active:scale-95
+       shadow-sm hover:shadow-md">
   Consultar
 </a>
           </div>
