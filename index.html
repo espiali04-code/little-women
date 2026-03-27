@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Little Women</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
@@ -27,13 +28,13 @@
 
 <!-- HERO VIDEO -->
 <!-- NAVBAR -->
-<header class="absolute top-0 left-0 w-full z-50 flex justify-between items-center px-12 py-6 text-white">
+<header class="absolute top-0 left-0 w-full z-50 flex justify-between items-center px-4 md:px-12 py-6 text-white">
 
   <a href="index.html" class="text-2xl font-serif tracking-wide">
     LITTLE WOMEN
   </a>
 
-  <nav class="flex gap-8 text-sm items-center">
+  <nav class="hidden md:flex gap-8 text-sm items-center">
 
     <a href="index.html" class="hover:text-[#c8a97e] transition">Inicio</a>
         <a href="#envio" class="hover:text-[#c8a97e] transition">Envío</a>
@@ -78,7 +79,7 @@
   </p>
 
   <!-- TITULO -->
-  <h1 class="text-4xl md:text-5xl font-serif mb-4 leading-tight">
+  <h1 class="text-2xl sm:text-3xl md:text-5xl font-serif mb-4 leading-tight">
     La elegancia que mereces llevar
   </h1>
 
@@ -88,7 +89,7 @@
   </p>
 
   <!-- BOTONES -->
-  <div class="flex justify-center gap-4 mt-2">
+  <div class="flex flex-col sm:flex-row justify-center gap-3 mt-2">
 
     <a href="#catalogo"
        class="bg-[#c8a97e] px-6 py-3 rounded-full text-sm text-white hover:scale-105 transition">
@@ -107,11 +108,11 @@
 </section>
 
 <!-- FILTROS -->
-<section class="px-12 mb-10">
+<section class="px-4 md:px-12 mb-10">
   <div class="bg-white p-6 rounded-2xl shadow-sm">
 
     <p class="text-xs mb-2">MATERIAL</p>
-    <div class="flex gap-3 mb-4">
+    <div class="flex flex-wrap gap-2 mb-4">
       <button class="btn active" onclick="setMaterial('oro', this)">Oro 18k</button>
       <button class="btn" onclick="setMaterial('plata950', this)">Plata 950</button>
       <button class="btn" onclick="setMaterial('plata925', this)">Plata 925</button>
@@ -130,13 +131,13 @@
 </section>
 
 <!-- PRODUCTOS -->
-<section id="catalogo" class="px-12 pb-20">
-  <div id="productos" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"></div>
+<section id="catalogo" class="px-4 md:px-12 pb-20">
+  <div id="productos" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"></div>
 </section>
 
 <!-- ENVÍO Y ENTREGA -->
 
-<section id="envio" class="px-12 py-20 bg-[#f7f3ef]">
+<section id="envio" class="px-4 md:px-12 py-16 md:py-20 bg-[#f7f3ef]">  
 
   <div class="grid md:grid-cols-2 gap-12 items-center">
 
@@ -145,7 +146,7 @@
 
       <img 
         src="https://images.unsplash.com/photo-1602752250015-52934bc45613"
-        class="rounded-2xl w-full h-[400px] object-cover"
+        class="rounded-2xl w-full h-64 md:h-[400px] object-cover"
       >
 
       <!-- TAG -->
@@ -228,7 +229,7 @@
 </section>
 
 <!-- GARANTÍA -->
-<section id="garantia" class="px-12 py-20 bg-[#f7f3ef] text-center">
+<section id="garantia" class="px-4 md:px-12 py-16 md:py-20 bg-[#f7f3ef] text-center">
 
   <!-- TITULO -->
   <p class="text-xs tracking-widest text-[#c8a97e] mb-2">
@@ -350,8 +351,8 @@
 
 </section>
 
-<!-- CONTACTO PREMIUM -->
-<section id="contacto" class="px-12 py-20 bg-[#f7f3ef]">
+<!-- CONTACTO -->
+<section id="contacto" class="px-4 md:px-12 py-16 md:py-20 bg-[#f7f3ef]">
 
   <div class="grid md:grid-cols-2 gap-12 items-center">
 
@@ -426,7 +427,7 @@
 
       <form class="grid gap-4">
 
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <input type="text" placeholder="Tu nombre" class="p-3 rounded border text-sm">
           <input type="email" placeholder="tu@email.com" class="p-3 rounded border text-sm">
         </div>
@@ -455,7 +456,7 @@
 </section>
 
 <!-- CTA FINAL -->
-<section class="px-12 pb-20">
+<section class="px-4 md:px-12 pb-20">
 
   <div class="bg-gradient-to-r from-[#3b2a23] to-[#1f140f] rounded-2xl px-10 py-10 flex flex-col md:flex-row justify-between items-center gap-6">
 
@@ -482,7 +483,7 @@
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-gradient-to-r from-[#3b2a23] to-[#1f140f] text-white px-12 py-16">
+<footer class="... px-4 md:px-12 py-16">
 
   <div class="grid md:grid-cols-4 gap-10">
 
